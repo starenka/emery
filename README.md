@@ -52,7 +52,7 @@ I CAN HAS IMAGES TOO?
 
 How about tables? Everybody loves tables. Get them all as tablib objects
 
-    >>> p = Page(url='http://www.nuforc.org/webreports/ndxe201206.html')
+    >>> p = Page(url='http://www.nuforc.org/webreports/ndxe201206.html', fix_html=True)
     >>> p.tables
     [<dataset object>]
 
@@ -69,6 +69,4 @@ or JSON (or YAML, CSV, XLS)
 Remember, you can use get_* methods to filter links, images or tables.
 
 ## TODO
-- .text should ignore JavaScript and friends
 - more features
-- cleanup

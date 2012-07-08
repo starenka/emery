@@ -79,5 +79,5 @@ class TableTests(TestCase):
 '''
         EXPECTS = [('6/20/12 13:53', 'Pevek (Russia)', '', 'Other', '',
                     "I saw it and it blew seven people's minds!", '6/20/12')]
-        p = Page(html=FIXTURE)
+        p = Page(html=FIXTURE, fix_html=True)
         self.assertEquals(EXPECTS, list(p.tables[0]))

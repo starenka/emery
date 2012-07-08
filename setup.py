@@ -14,7 +14,7 @@ CLASSIFIERS = [
 KEYWORDS = 'python data mining scraping'
 
 setup(name='emery',
-    version='0.0.1',
+    version='0.0.2',
     description="""scraping/mining tools""",
     author='starenka',
     packages=find_packages(),

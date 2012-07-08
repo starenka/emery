@@ -7,8 +7,8 @@ import requests
 from BeautifulSoup import BeautifulSoup
 from html5tidy import tidy
 from pyquery import PyQuery as pq
+from lxml.html.clean import Cleaner
 from tablib import Dataset
-
 
 class Page(object):
     def __init__(self, url=None, html=None, fix_html=False):
@@ -90,4 +90,18 @@ class Page(object):
         """
             returns text representation of page
         """
-        return pq(self.html).text()
+        kill = dict(scripts=True,
+            javascript=True,
+            comments=True,
+            style=True,
+            links=True,
+            meta=True,
+            page_structure=True,
+            processing_instructions=True,
+            embedded=True,
+            frames=True,
+            forms=True,
+            annoying_tags=True
+        )
+        cleaned = Cleaner(**kill).clean_html(self.html)
+        return pq(cleaned).text()
