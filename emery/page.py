@@ -11,7 +11,7 @@ from tablib import Dataset
 
 
 class Page(object):
-    def __init__(self, url=None, html=None, fix_html=True):
+    def __init__(self, url=None, html=None, fix_html=False):
         if html:
             self.html = html
         else:
