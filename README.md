@@ -70,4 +70,6 @@ Remember, you can use get_* methods to filter links, images or tables.
 
 ## TODO
 - docs
+- .text should ignore JavaScript and friends
 - more features
+- cleanup
