@@ -61,7 +61,7 @@ which you can represent as a list of tuples
     >>> list(p.tables[0])[:5]
     [('6/30/12 00:00', 'Kansas City', 'MO', 'Cigar', 'over1 and a half hours', 'Five cigar shape images going in circles above our neighbor hood.', '7/4/12'), ('6/30/12 00:00', 'Kansas City', 'MO', 'Cigar', 'over1 and a half hours', 'Five fast.cigar shape images going in circles above our neighbor hood.', '7/4/12'), ('6/30/12 23:50', 'Bremerton', 'WA', 'Oval', '30 seconds', 'Kitsap county ufo sighting', '7/4/12'), ('6/30/12 23:30', 'Blaine', 'WA', 'Light', '2 minutes', 'Orange lights over Drayton Harbor', '7/4/12'), ('6/30/12 23:00', 'Monroe', 'MI', 'Sphere', '1-2 minutes', 'Orange ufo sighted in Monroe near I-75', '7/4/12')]
 
-or JSON (,CSV, XLS etc.)
+or JSON (or YAML, CSV, XLS)
 
     >>> p.tables[0].json
     '[{"Date / Time": "6/30/12 00:00", "City": "Kansas City", "State": "MO", "Shape": "Cigar", "Duration": "over1 and a half hours", "Summary": "Five cigar shape images going in circles above our neighbor hood.", "Posted": "7/4/12"}, {"Date / Time": "6/30/12 00:00", "City": "Kansas City", "State": "MO", "Shape": "Cigar", "Duration": "over1 and a half hours", "Summary": "Five fast.cigar shape images going in circles above our neighbor hood.", "Posted": "7/4/12"}, {"Date / Time": "6/30/12 23:50", "City": "Bremerton", "State": "WA", "Shape": "Oval", "Duration": "30 seconds", "Summary": "Kitsap county ufo sighting", "Posted": "7/4/12"}, {"Date / Time": "6/30/12 23:30", "City": "Blaine", "State": "WA", "Shape": "Light", "Duration": "2 minutes", "Summary": "Orange lights over Drayton Harbor", "Posted": "7/4/12"}, {"Date / Time": "6/30/12 23:00", "City": "Monroe", "State": "MI", "Shape": "Sphere", "Duration": "1-2 minutes", "Summary": "Orange ufo sighted in Monroe near I-75", "Posted": "7/4/12"}, {"Date / Time": "6/30/12 23:00", "City": "Niles", "State": "OH", "Shape": "Changing", "Duration": "One minute", "Summary": "Square box in shape color red to orange, shape changed from square to circle color red to yellow.", "Posted": "7/4/12"}, ... [truncated]
@@ -69,7 +69,6 @@ or JSON (,CSV, XLS etc.)
 Remember, you can use get_* methods to filter links, images or tables.
 
 ## TODO
-- docs
 - .text should ignore JavaScript and friends
 - more features
 - cleanup
